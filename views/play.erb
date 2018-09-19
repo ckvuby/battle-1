@@ -1,6 +1,6 @@
-<%= @player_1_name %> vs. <%= @player_2_name %>
-<%= @player_2_name %>: 600HP
-
+<%= $game.name(player_1) %> vs. <%= $game.name(player_2) %>
+<br>
+<%= $game.name(player_2) %>: <%= $game.health(player_2) %>hp
 <form action="/move" method="post">
 <input type="submit" value="Attack">
 </form>
